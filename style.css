@@ -29,9 +29,25 @@ main {
   border-radius: 1.6rem;
 }
 
+.conversor .wrapper{
+  display: flex;
+  gap: 1.6rem;
+}
+
+.money-wrapper{
+  background-color: white;
+  outline: .1 solid #94a3b8;
+
+  width: 27rem;
+  padding: 1.6rem;
+  border-radius: .8rem;
+}
+
+.money-wrapper:hover{
+  outline: 0.25rem solid #7C3ACD;
+}
+
 .cambio .wrapper{
   width: 59.2rem;
   height: 3.6rem;
-
-  border: 1px solid red;
 }
