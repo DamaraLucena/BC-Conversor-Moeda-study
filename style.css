@@ -24,8 +24,6 @@ body {
 }
 
 main {
-  width: 80rem;
-  height: 69.2rem;
   padding: 6.3rem 8rem;
   background: #ffffff;
   box-shadow: 0rem 0.4rem 3.2rem rgba(15, 23, 42, 0.15);
@@ -43,8 +41,11 @@ section h2{
 .conversor .wrapper{
   margin-top: 1.6rem; 
   display: flex;
+  align-items: center;
   gap: 1.6rem;
 }
+
+/* Money wrapper */
 
 .money-wrapper{
   background-color: white;
@@ -53,6 +54,11 @@ section h2{
   width: 27rem;
   padding: 1.6rem;
   border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
 }
 
 .money-wrapper:hover,
@@ -73,6 +79,42 @@ section h2{
 
 .amount:focus{
   outline: 0;
+}
+
+/* Dropdown */ 
+
+.dropdown{
+  --bg-hover: #EDE9FE;
+  width: 13rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 5.6rem;
+  overflow: hidden;
+}
+
+.dropdown:hover{
+  height: fit-content;
+  overflow: initial;
+}
+
+.selected{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  border-radius: 0 0.8rem 0.8rem 0;
+
+  padding: 1.6rem;
+
+  cursor: pointer;
+
+}
+
+.selected:hover{
+  background-color: var(--bg-hover);
 }
 
 .cambio .wrapper{
